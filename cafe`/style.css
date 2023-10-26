@@ -1,0 +1,415 @@
+body, html {
+  height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/banner2.jpg");
+
+/* Set a specific height */
+height: 50%;
+
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: left;
+position: relative;
+top: 100%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+  
+}
+
+.g1 {
+  font-family:'Times New Roman', Times, serif;
+  font-size:100px
+}
+.p1 {
+  font-family: 'Times New Roman', Times, serif;
+}
+.p1 {
+  font-size: 80px;
+}
+.h1{
+  font-family: monospace;
+}
+.h1{
+  font-size: 20px;
+}
+
+
+
+
+#navigationBar li a:focus::before{
+  content: '';
+  background-color:olivedrab;
+  width: 10px;
+  height: 10px;
+  border-radius: 25%;
+  position: relative;
+  left: -2px;
+  top: 0px;
+  display: inline-block;
+}
+
+
+
+.menu > a,#navigationBar ul li a{
+  font-weight: bold;
+  padding: 14px;
+}
+
+
+
+.navbar {
+  width: 100%;
+  
+  overflow: auto;
+}
+.navbar a {
+  float: left;
+  padding: 14px;
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+  width: 150px; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover{
+  color: dimgray;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+
+
+
+
+.navbar-brand{
+  margin-top: -40px;
+  margin-bottom: -40px;
+  font-size: 80px;
+}
+
+.lr a{
+  display: inline-block;
+  
+}
+
+.lr-btn{
+  width: 80px;
+  border-radius: 40px;
+  padding:8px;
+  margin-top: -12px;
+  margin-bottom: -12px;
+  color: #fff;
+  font-size: 10px;
+  background-color:darkolivegreen;
+}
+
+.lr-btn:hover{
+  color:black;
+  background-color: none;
+}
+
+
+
+
+    
+img {
+  display: block;
+  margin-left: auto;
+  right:0px auto;
+}
+
+.img1 {
+  display: block;
+  margin-right:1000px;
+  left:0px auto;
+}
+
+.left {
+  position: absolute;
+  left: 0px;
+  width: 500px;
+ 
+  padding: 10px;
+}
+
+.p7{
+margin-bottom: -10px;
+word-spacing: 10px;
+font-size: 20px;
+
+}
+.p2 {
+font-size: 20px;
+text-indent: 80px;
+}
+
+.h2{
+  font-size:80px;
+  text-align:center;
+  text-indent:10px;
+  vertical-align:100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 100px;
+  
+}
+
+
+
+.p3{
+  text-indent: 10px;
+  font-size: 30px;
+}
+
+.right {
+  position: absolute;
+  right: 0px;
+  width: 500px;
+ 
+  padding: 10px
+}
+
+
+/*MEMBERSECTION*/
+.memberSection{
+  margin-top: 0px;
+  color: #fff;
+
+}
+.innerSection{
+  background-color: darkolivegreen;
+  padding: 100px;
+}
+
+.innerSection .border{
+  height: 10px;
+ 
+  background-color: #fff;
+}
+.innerSection h4{
+  color:#fff;
+  font-size: 50px;
+  font-weight: bold;
+}
+.innerSection h5{
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+.p4{
+  columns: 80px 2;
+  column-gap: 40px;
+  column-rule: 4px double #1e021e;
+}
+
+.h4{
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+/*END OF MEMBER SECTION*/
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 16%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 33%;
+  
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer-top-box ul li a:hover{
+  color:#fff !important;
+  border-color:#fff!important;
+}
+
+.footer-top-box ul li a{
+  color:black !important;
+  display: inline-block !important;
+  width: 36px !important;
+  height: 36px !important;
+  border: 2px solid black !important;
+  text-align: center !important;
+  line-height: 32px !important;
+}
+
+.h8{
+  text-align: center;
+}
+
+
+.marketingSection .border{
+  background-color:olivedrab;
+  height: 4px !important;
+  width: 40px;
+  margin: 10px 0px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+ 
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color:gray;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+button {
+  
+  color:black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  
+  cursor: pointer;
+  width: 30%;
+  border:black;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=time], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: olivedrab;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=time]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+ 
+}
+
+.signupbtn{
+  background-color: darkolivegreen;
+}
+
+.modalfade{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}

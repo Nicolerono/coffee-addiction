@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  Online Order-Home-Grove Cafe` </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/a1ebf2bdf3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    
+        <body>
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light bg-white menu">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" style="font-family: 'Times New Roman', Times, serif; font-size: 25px;"  href="#">Grove Cafe` </a>
+                    
+                      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigationBar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="navigationBar">
+                      <div class="navbar"></div>
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active">
+                            <a  href="../index.html" class="nav-link px-3">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="thisisus.html">This Is Us</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                          </li>
+                           <li class="nav-item">
+                            <a class="nav-link" href="onlineorder.html">Online Order</a>
+                          </li> 
+                          <li class="nav-item">
+                            <a class="nav-link" href="contactus.html">Contact Us</a>
+                          </li>
+        
+                          <li class="nav-item lr">
+                            <a href="pages/login.html" class="nav-link">
+                                <button class="btn btn-lg btn-default lr-btn">
+                                    <i class="fa-solid fa-user">Login</i>
+                                </button>
+                            </a>
+                            <div class="first">
+                             
+                            </div>
+                           
+                            
+        
+                         
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+             </header>
+             
+             <main>
+                <section class="memberSection">
+                    <div class="innerSection">
+                        <center>
+                        <div class="row membersRow">
+              
+                            <div class="col-md-20">
+                               <h4 class="h4" style="font-size:450%">Online Order.</h4>
+                              
+              
+                                <p style="font-size: 25px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="fw-light">Order your favorite meal and drink for pickup or delivery.</p>
+                               
+                            </div>
+                          
+                        </div>
+                       </center>
+                    </div>
+                 </section>
+
+                 
+                    
+                <!-- Trigger/Open The Modal -->
+<button id="myBtn_1">Pickup,ASAP(in 15 minutes) *change*</button>
+<!-- The Modal -->
+<div id="myModal_1" class="modal" >
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+    <div style="font-family: 'Times New Roman', Times, serif; font-size: 30px;"><p><b>How do you want to get your order?</b> </p></div>
+    
+    <form action="/action_page.php">
+      <label for="location">Pickup from:</label><br>
+      <input type="text" id="location" name="location" value="Kimathi street,nbi,ke."><br>
+      <label for="location">Delivery to:</label><br>
+      <input type="text" id="location" name="location" value="Maasai lodge,Ongata Rongai,ke."><br>
+      <p><a href="#" style="color:dodgerblue">*choose between pick up and delivery from the options above</a></p>
+      <label for="lname">Pickup time:</label><br>
+      <input type="time" id="time" name="time" value="00:00hrs"><br><br>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn_1">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+      
+     
+     
+    </form>
+   
+   
+    
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+
+
+
+var modal = document.getElementById('id01');
+
+var modal = document.getElementById("myModal_1");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn_1");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+var btn=document.getElementsByClassName("cancelbtn_1");
+
+btn.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+<nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3"  >
+  <a class="navbar-brand" href="#">All Day Every Day.</a>
+  <ul class="nav nav-pills" style="width: 800px;">
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading1">Bakery </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#scrollspyHeading2">All-Day Breakfast</a>
+    
+    </li>
+    <i class="fa-solid fa-cart-plus" style="color: #1f5129;"></i>
+    
+    
+      </ul>
+    </li>
+  </ul>
+</nav>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+  <h4 id="scrollspyHeading1">All Day Every Day</h4>
+  <h4 id="scrollspyHeading1">Bakery</h4>
+
+  
+
+  
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+ 
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog"></div>
+     
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Sender:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+ 
+<script>
+ const exampleModal = document.getElementById('exampleModal')
+if (exampleModal) {
+  exampleModal.addEventListener('show.bs.modal', event => {
+    // Button that triggered the modal
+    const button = event.relatedTarget
+    // Extract info from data-bs-* attributes
+    const recipient = button.getAttribute('data-bs-whatever')
+    // If necessary, you could initiate an Ajax request here
+    // and then do the updating in a callback.
+
+    // Update the modal's content.
+    const modalTitle = exampleModal.querySelector('.modal-title')
+    const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+    modalTitle.textContent = `New message to ${recipient}`
+    modalBodyInput.value = recipient
+  })
+}
+</script>
+
+
+  <h4 id="scrollspyHeading2">Second heading</h4>
+  <p>...</p>
+  <h4 id="scrollspyHeading3">Third heading</h4>
+  <p>...</p>
+  <h4 id="scrollspyHeading4">Fourth heading</h4>
+  <p>...</p>
+  <h4 id="scrollspyHeading5">Fifth heading</h4>
+  <p>...</p>
+
+        </body>
+</html>
